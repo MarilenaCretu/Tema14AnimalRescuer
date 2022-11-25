@@ -1,14 +1,14 @@
 package AnimalRescuer;
 
-public class Animal {
+public abstract class Animal {
     private String name;
     private int age;
     private String breed;
     private String color;
     private double weight;
     private String gender;
-    private String talk;
-    private String eat;
+    public abstract String talk();
+    public abstract String eat();
 
     public String getName() {
         return name;
@@ -58,19 +58,4 @@ public class Animal {
         this.gender = gender;
     }
 
-    public String getTalk() {
-        return talk;
-    }
-
-    public void setTalk(String talk) {
-        this.talk = talk;
-    }
-
-    public String getEat() {
-        return eat;
-    }
-
-    public void setEat(String eat) {
-        this.eat = eat;
-    }
 }

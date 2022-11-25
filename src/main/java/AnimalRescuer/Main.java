@@ -2,6 +2,19 @@ package AnimalRescuer;
 
 public class Main {
     public static void main(String[] args) {
+        Dog pug = new Pug();
+        pug.setName("Falco");
+        pug.setAge(1);
+        pug.setWeight(13.5);
+        pug.setBreed("pug");
+        pug.setColor("brown");
+        pug.setGender("Female");
+        System.out.println(pug.getName() + " is a dog from the " + pug.getBreed() + " breed, is "
+                + pug.getGender() + " and his color is " + pug.getColor() + ", is "
+                + pug.getAge() + " years old and weighs " + pug.getWeight() + " kg.");
+        System.out.println(pug.getName()+" likes to do \""+pug.talk()+"\" and eat \""+ pug.eat()+"\".\n");
+
+
         Duck duck= new Duck();
         duck.setName("Ducky");
         duck.setAge(1);
@@ -9,15 +22,10 @@ public class Main {
         duck.setBreed("domestica");
         duck.setColor("negru cu dungi verzi");
         duck.setGender("Male");
-
         System.out.println(duck.getName() + " is a duck from the " + duck.getBreed() + " breed, is "
                 + duck.getGender() + " and his color is " + duck.getColor() + ", is "
                 + duck.getAge() + " years old and weighs " + duck.getWeight() + " kg.");
-
-        duck.setTalk("mac-mac");
-        duck.setEat("iarba");
-        System.out.println(duck.getName()+" likes to do \""+duck.getTalk()+"\" and eat \""+ duck.getEat()+"\".");
-
+        System.out.println(duck.getName()+" likes to do \""+duck.talk()+"\" and eat \""+ duck.eat()+"\".\n");
 
 
         Chicken chicken= new Chicken();
@@ -27,16 +35,10 @@ public class Main {
         chicken.setBreed("europeana");
         chicken.setColor("yellow");
         chicken.setGender("Male");
-
         System.out.println(chicken.getName() + " is a chicken from the " + chicken.getBreed() + " breed, is "
                 + chicken.getGender() + " and his color is " + chicken.getColor() + ", is "
                 + chicken.getAge() + " years old and weighs " + chicken.getWeight() + " kg.");
-
-        chicken.setTalk("pui-pui");
-        chicken.setEat("malai");
-        System.out.println(chicken.getName()+" likes to do \""+chicken.getTalk()+"\" and eat \""+ chicken.getEat()+"\".");
-
-
+        System.out.println(chicken.getName()+" likes to do \""+chicken.talk()+"\" and eat \""+ chicken.eat()+"\".\n");
 
 
         Cat cat= new Cat();
@@ -50,10 +52,7 @@ public class Main {
         System.out.println(cat.getName() + " is a cat from the " + cat.getBreed() + " breed, is "
                 + cat.getGender() + " and his color is " + cat.getColor() + ", is "
                 + cat.getAge() + " years old and weighs " + cat.getWeight() + " kg.");
-
-        cat.setTalk("miau-miau");
-        cat.setEat("soricei");
-        System.out.println(cat.getName()+" likes to do \""+cat.getTalk()+"\" and eat \""+ cat.getEat()+"\".");
+        System.out.println(cat.getName()+" likes to do \""+cat.talk()+"\" and eat \""+ cat.eat()+"\".\n");
 
 
 
@@ -70,10 +69,7 @@ public class Main {
         System.out.println(dog.getName() + " is a dog from the " + dog.getBreed() + " breed, is "
                 + dog.getGender() + " and his color is " + dog.getColor() + ", is "
                 + dog.getAge() + " years old and weighs " + dog.getWeight() + " kg.");
-
-        dog.setTalk("ham-ham");
-        dog.setEat("oase");
-        System.out.println(dog.getName()+" likes to do \""+dog.getTalk()+"\" and gnaw \""+ dog.getEat()+"\".");
+        System.out.println(dog.getName()+" likes to do \""+dog.talk()+"\" and gnaw \""+ dog.eat()+"\".\n");
 
         Veterinarian veterinarian = new Veterinarian();
         veterinarian.setName("Popescu Ion");
